@@ -11,19 +11,10 @@
 
 <br/><br/>
 
-<!-- Terminal Whoami Section -->
+<!-- Terminal Whoami Section (Unified Large Art + Stats + Activity Bars) -->
 <h3><code>lokesh@github ~ $ whoami</code></h3>
 
-<table>
-  <tr>
-    <td valign="top">
-      <img src="https://raw.githubusercontent.com/lokesh3ac-ai/lokesh3ac-ai/main/portrait-ascii.svg?v=1" width="370" />
-    </td>
-    <td valign="top">
-      <img src="https://raw.githubusercontent.com/lokesh3ac-ai/lokesh3ac-ai/main/info-card.svg?v=1" width="490" />
-    </td>
-  </tr>
-</table>
+<img src="./whoami-card.svg?v=2" width="860" />
 
 <br/><br/>
 

@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 390" width="860" height="390">
+  <style>
+    .bg { fill: #0d1117; stroke: #21262d; stroke-width: 1.5px; rx: 12px; }
+    .ascii {
+      font-family: 'SFMono-Regular', Consolas, 'Courier New', monospace;
+      font-size: 7px;
+      font-weight: 600;
+      fill: #8b949e;
+      white-space: pre;
+    }
+    .name-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      fill: #ffffff;
+      letter-spacing: 0.8px;
+    }
+    .stat-val {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      fill: #e6edf3;
+    }
+    .stat-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      fill: #7d8590;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .bar {
+      fill: #39d353;
+      transform-origin: bottom;
+      animation: pulse 1.6s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% { transform: scaleY(0.28); }
+      50% { transform: scaleY(1.0); }
+      100% { transform: scaleY(0.42); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor {
+      animation: blink 0.9s infinite;
+      fill: #58a6ff;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="100%" height="100%" class="bg" />
+
+  <!-- Left: Large Animated Typing ASCII Art -->
+  <g transform="translate(25, 25)">
+    <clipPath id="cp-0">
+      <rect x="0" y="-6.199999999999999" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.000s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="0.0" clip-path="url(#cp-0)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-1">
+      <rect x="0" y="2.0" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.020s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="8.2" clip-path="url(#cp-1)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-2">
+      <rect x="0" y="10.2" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.040s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="16.4" clip-path="url(#cp-2)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-3">
+      <rect x="0" y="18.4" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.060s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="24.599999999999998" clip-path="url(#cp-3)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-4">
+      <rect x="0" y="26.599999999999998" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.080s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="32.8" clip-path="url(#cp-4)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@%+==::.`:%@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-5">
+      <rect x="0" y="34.8" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.100s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="41.0" clip-path="url(#cp-5)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@#=--::``..`.`:+@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-6">
+      <rect x="0" y="43.0" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.120s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="49.199999999999996" clip-path="url(#cp-6)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@c--`...::..   ..`:s@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-7">
+      <rect x="0" y="51.19999999999999" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.140s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="57.39999999999999" clip-path="url(#cp-7)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@#-`:--:`  `        :#@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-8">
+      <rect x="0" y="59.39999999999999" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.160s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="65.6" clip-path="url(#cp-8)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@c`...:`.````.     .`=@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-9">
+      <rect x="0" y="67.6" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.180s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="73.8" clip-path="url(#cp-9)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@::.`-=*****+=--:..`:@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-10">
+      <rect x="0" y="75.8" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.200s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="82.0" clip-path="url(#cp-10)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@-.*c####s#ssc**=:.`s@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-11">
+      <rect x="0" y="83.99999999999999" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.220s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="90.19999999999999" clip-path="url(#cp-11)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@%*`c+:`  =c*`..``=-`@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-12">
+      <rect x="0" y="92.19999999999999" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.240s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="98.39999999999999" clip-path="url(#cp-12)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@=s*#s=--==#=:s :.-+==%@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-13">
+      <rect x="0" y="100.39999999999999" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.260s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="106.6" clip-path="url(#cp-13)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@+c*ss%##s#%*=sssc+*+=@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-14">
+      <rect x="0" y="108.59999999999998" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.280s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="114.79999999999998" clip-path="url(#cp-14)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@%s*++=+s*:+-*+s#c=+-@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-15">
+      <rect x="0" y="116.79999999999998" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.300s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="122.99999999999999" clip-path="url(#cp-15)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@#**-``::-``.`*+=-s@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-16">
+      <rect x="0" y="124.99999999999999" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.320s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="131.2" clip-path="url(#cp-16)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@=++s##c-+*+c+=+@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-17">
+      <rect x="0" y="133.2" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.340s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="139.39999999999998" clip-path="url(#cp-17)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@c:-*ssc***=::%@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-18">
+      <rect x="0" y="141.4" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.360s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="147.6" clip-path="url(#cp-18)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@ssc*:       -+@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-19">
+      <rect x="0" y="149.6" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.380s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="155.79999999999998" clip-path="url(#cp-19)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@*. csc*+==----=-.`@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-20">
+      <rect x="0" y="157.8" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.400s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="164.0" clip-path="url(#cp-20)" xml:space="preserve">@@@@@@@@@@@@@@@@@%**`.-sscc**++==+=: .`=@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-21">
+      <rect x="0" y="166.0" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.420s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="172.2" clip-path="url(#cp-21)" xml:space="preserve">@@@@@@@@@@@@@%c+*c+:.-+****+*+*+++==- .`:--#@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-22">
+      <rect x="0" y="174.2" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.440s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="180.39999999999998" clip-path="url(#cp-22)" xml:space="preserve">@@@@@@@@%c*++++=.-:...csss*++*+*+*cc*.:---`:*@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-23">
+      <rect x="0" y="182.4" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.460s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="188.6" clip-path="url(#cp-23)" xml:space="preserve">@@@@s*++++==--+=.-:: .:##ssccssscccc-`:`--.`:-==#@@@@@@@@@@@@@</text>
+    <clipPath id="cp-24">
+      <rect x="0" y="190.6" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.480s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="196.79999999999998" clip-path="url(#cp-24)" xml:space="preserve">@@#c*++=+---=:=+`=-*.-`-*#s*cccssss--:`-..```:-=-=+*@@@@@@@@@@</text>
+    <clipPath id="cp-25">
+      <rect x="0" y="198.79999999999998" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.500s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="204.99999999999997" clip-path="url(#cp-25)" xml:space="preserve">%c*+=+.-``:-=+-*:++=c++`:+scssssss===` ..`:::`---=:-:@@@@@@@@@</text>
+    <clipPath id="cp-26">
+      <rect x="0" y="207.0" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.520s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="213.2" clip-path="url(#cp-26)" xml:space="preserve">**+-*-.:`-:-+=-=*-+=c*=`:-+ccs###-+=`..`:::-:---=::`:`%@@@@@@@</text>
+    <clipPath id="cp-27">
+      <rect x="0" y="215.2" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.540s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="221.39999999999998" clip-path="url(#cp-27)" xml:space="preserve">*+*=--:``==-+=+==---+*+-`:-*cs##**=..`::::--`---=`:::``@@@@@@@</text>
+    <clipPath id="cp-28">
+      <rect x="0" y="223.39999999999998" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.560s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="229.59999999999997" clip-path="url(#cp-28)" xml:space="preserve">+*+=-:`..:++==++==:--++::-.:*s#+*`:::::::-:`---=-`::`..:@@@@@@</text>
+    <clipPath id="cp-29">
+      <rect x="0" y="231.6" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.580s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="237.79999999999998" clip-path="url(#cp-29)" xml:space="preserve">c=-:`:.:..`=-+*+==-::++=::-.`c+`:=+--::::``:--:-```````.@@@@@@</text>
+    <clipPath id="cp-30">
+      <rect x="0" y="239.79999999999998" width="0" height="10.2">
+        <animate attributeName="width" from="0" to="400" dur="0.10s" begin="0.600s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="245.99999999999997" clip-path="url(#cp-30)" xml:space="preserve">:==-.`.:.. =--++==-::`==.::::-. =+:-:```:``:`.`...``..`.@@@@@@</text>
+
+    <!-- Animated Name Below Photo -->
+    <clipPath id="cp-name">
+      <rect x="0" y="252.2" width="0" height="26">
+        <animate attributeName="width" from="0" to="240" dur="0.8s" begin="0.85s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="name-text" x="0" y="272.2" clip-path="url(#cp-name)">Lokesh Maurya</text>
+    <rect class="cursor" x="135" y="257.2" width="8" height="17" rx="1">
+      <animate attributeName="x" from="0" to="135" dur="0.8s" begin="0.85s" fill="freeze" />
+    </rect>
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="435" y1="25" x2="435" y2="365" stroke="#21262d" stroke-width="1.2" />
+
+  <!-- Right: Metrics Grid (2x3) -->
+  <g transform="translate(480, 52)">
+    <!-- Row 1 -->
+    <text class="stat-val" x="0" y="0">149</text>
+    <text class="stat-label" x="0" y="16">REPOSITORIES</text>
+
+    <text class="stat-val" x="175" y="0">149</text>
+    <text class="stat-label" x="175" y="16">CONTRIBUTIONS</text>
+
+    <!-- Row 2 -->
+    <text class="stat-val" x="0" y="70">8,504</text>
+    <text class="stat-label" x="0" y="86">COMMITS</text>
+
+    <text class="stat-val" x="175" y="70">362</text>
+    <text class="stat-label" x="175" y="86">STARS</text>
+
+    <!-- Row 3 -->
+    <text class="stat-val" x="0" y="140">128</text>
+    <text class="stat-label" x="0" y="156">FOLLOWERS</text>
+
+    <text class="stat-val" x="175" y="140">23.5</text>
+    <text class="stat-label" x="175" y="156">AVG/WEEK</text>
+  </g>
+
+  <!-- Bottom-Right: Activity Visualizer Bars -->
+  <g transform="translate(480, 320)">
+    <rect class="bar" x="0" y="-15" width="13" height="15" rx="2" style="animation-delay: 0.1s;" />
+    <rect class="bar" x="24" y="-28" width="13" height="28" rx="2" style="animation-delay: 0.3s;" />
+    <rect class="bar" x="48" y="-45" width="13" height="45" rx="2" style="animation-delay: 0.2s;" />
+    <rect class="bar" x="72" y="-72" width="13" height="72" rx="2" style="animation-delay: 0.5s;" />
+    <rect class="bar" x="96" y="-38" width="13" height="38" rx="2" style="animation-delay: 0.4s;" />
+    <rect class="bar" x="120" y="-85" width="13" height="85" rx="2" style="animation-delay: 0.15s;" />
+    <rect class="bar" x="144" y="-60" width="13" height="60" rx="2" style="animation-delay: 0.6s;" />
+    <rect class="bar" x="168" y="-75" width="13" height="75" rx="2" style="animation-delay: 0.25s;" />
+    <rect class="bar" x="192" y="-50" width="13" height="50" rx="2" style="animation-delay: 0.35s;" />
+    <rect class="bar" x="216" y="-95" width="13" height="95" rx="2" style="animation-delay: 0.1s;" />
+    <rect class="bar" x="240" y="-65" width="13" height="65" rx="2" style="animation-delay: 0.45s;" />
+    <rect class="bar" x="264" y="-35" width="13" height="35" rx="2" style="animation-delay: 0.2s;" />
+    <rect class="bar" x="288" y="-22" width="13" height="22" rx="2" style="animation-delay: 0.5s;" />
+  </g>
+</svg>
