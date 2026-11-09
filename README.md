@@ -14,7 +14,7 @@
 <!-- Terminal Whoami Section (Unified Large Art + Stats + Activity Bars) -->
 <h3><code>lokesh@github ~ $ whoami</code></h3>
 
-<img src="./whoami-card.svg?v=2" width="860" />
+<img src="[https://raw.githubusercontent.com/lokesh3ac-ai/lokesh3ac-ai/main/whoami-card.svg?v=4](https://raw.githubusercontent.com/lokesh3ac-ai/lokesh3ac-ai/main/whoami-card.svg?v=4)" width="860" />
 
 <br/><br/>
 
