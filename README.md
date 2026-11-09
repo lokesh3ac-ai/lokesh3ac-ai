@@ -8,7 +8,7 @@
 <h3><code>lokesh@github ~ $ whoami</code></h3>
 <table>
   <tr>
-    <td valign="top"><img src="./portrait-ascii.svg" width="370" /></td>
+    <td valign="top"><img src="https://raw.githubusercontent.com/lokesh3ac-ai/lokesh3ac-ai/main/portrait-ascii.svg?v=1" width="370" /></td>
     <td valign="top"><img src="./info-card.svg" width="490" /></td>
   </tr>
 </table>
