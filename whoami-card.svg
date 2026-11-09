@@ -3,7 +3,7 @@
     .bg { fill: #0d1117; stroke: #21262d; stroke-width: 1.5px; rx: 12px; }
     .ascii {
       font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-      font-size: 8.5px;
+      font-size: 8px;
       font-weight: 700;
       fill: #8b949e;
       white-space: pre;
@@ -49,233 +49,233 @@
     }
   </style>
 
-  <!-- Background Box -->
+  <!-- Container Box -->
   <rect width="100%" height="100%" class="bg" />
 
-  <!-- Left: Large Full-Scale ASCII Art -->
+  <!-- Left: Large ASCII Portrait -->
   <g transform="translate(30, 28)">
     <clipPath id="cp-0">
-      <rect x="0" y="-7.800000000000001" width="0" height="11.8">
+      <rect x="0" y="0.0" width="0" height="11.2">
         <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.000s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="0.0" clip-path="url(#cp-0)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%c++--c%@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="9.2" clip-path="url(#cp-0)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-1">
-      <rect x="0" y="2.0" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.018s" fill="freeze" />
+      <rect x="0" y="9.2" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.015s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="9.8" clip-path="url(#cp-1)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@s---=:::`.`:`%@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="18.4" clip-path="url(#cp-1)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-2">
-      <rect x="0" y="11.8" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.036s" fill="freeze" />
+      <rect x="0" y="18.4" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.030s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="19.6" clip-path="url(#cp-2)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@%==::````. `.. ``:*@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="27.599999999999998" clip-path="url(#cp-2)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-3">
-      <rect x="0" y="21.6" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.054s" fill="freeze" />
+      <rect x="0" y="27.599999999999998" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.045s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="29.400000000000002" clip-path="url(#cp-3)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@%=--`....::...    .``:s@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="36.8" clip-path="url(#cp-3)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-4">
-      <rect x="0" y="31.400000000000002" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.072s" fill="freeze" />
+      <rect x="0" y="36.8" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.060s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="39.2" clip-path="url(#cp-4)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@:---`. .   `        ..`s@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="46.0" clip-path="url(#cp-4)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@c+=:=#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-5">
-      <rect x="0" y="41.2" width="0" height="11.8">
+      <rect x="0" y="46.0" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.075s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="55.199999999999996" clip-path="url(#cp-5)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@%==-+::-`.`:*@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-6">
+      <rect x="0" y="55.19999999999999" width="0" height="11.2">
         <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.090s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="49.0" clip-path="url(#cp-5)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@#:`::`..`.         ....`:@@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-6">
-      <rect x="0" y="51.0" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.108s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="58.800000000000004" clip-path="url(#cp-6)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@``..``::=++=``..:.`. ..:%@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="64.39999999999999" clip-path="url(#cp-6)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@#==-`.... `. .``:%@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-7">
-      <rect x="0" y="60.80000000000001" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.126s" fill="freeze" />
+      <rect x="0" y="64.39999999999999" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.105s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="68.60000000000001" clip-path="url(#cp-7)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@*: `:-++c*ccc**+--:`..`:%@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="73.6" clip-path="url(#cp-7)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@%::``:.  `       ..:%@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-8">
-      <rect x="0" y="70.60000000000001" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.144s" fill="freeze" />
+      <rect x="0" y="73.6" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.120s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="78.4" clip-path="url(#cp-8)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@%` *cs###ssssscc**=-:..:@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="82.8" clip-path="url(#cp-8)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@+:::..``          .`-@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-9">
-      <rect x="0" y="80.4" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.162s" fill="freeze" />
+      <rect x="0" y="82.8" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.135s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="88.2" clip-path="url(#cp-9)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@:+c=::`.`*ssc*+-=-==:.@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="92.0" clip-path="url(#cp-9)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@:...```:`-:`. . . ..`@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-10">
-      <rect x="0" y="90.2" width="0" height="11.8">
+      <rect x="0" y="91.99999999999999" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.150s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="101.19999999999999" clip-path="url(#cp-10)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@%: .:-=**+**++--:`..:@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-11">
+      <rect x="0" y="101.19999999999999" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.165s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="110.39999999999999" clip-path="url(#cp-11)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@` *c####s#ssc**=:..`@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-12">
+      <rect x="0" y="110.39999999999999" width="0" height="11.2">
         <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.180s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="98.0" clip-path="url(#cp-10)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@=+-cc-.-`.`:**:::=:-==-*-%@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-11">
-      <rect x="0" y="100.00000000000001" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.198s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="107.80000000000001" clip-path="url(#cp-11)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@=+:c##sc+*cs%s=+=-:-==++-=@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-12">
-      <rect x="0" y="109.80000000000001" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.216s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="117.60000000000001" clip-path="url(#cp-12)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@*s=css#ss*s%%s-+s##c*+**=@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="119.6" clip-path="url(#cp-12)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@%:+c=:`  +sc=:`::==.@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-13">
-      <rect x="0" y="119.60000000000001" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.234s" fill="freeze" />
+      <rect x="0" y="119.59999999999998" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.195s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="127.4" clip-path="url(#cp-13)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@sc*++==cs=`+++=*s#s*+-=%@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="128.79999999999998" clip-path="url(#cp-13)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@c=+cs*=..`=#=:`..`-=`-#@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-14">
-      <rect x="0" y="129.40000000000003" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.252s" fill="freeze" />
+      <rect x="0" y="128.8" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.210s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="137.20000000000002" clip-path="url(#cp-14)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@c**c*.`=+::..``+*+==:*@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="138.0" clip-path="url(#cp-14)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@%c=c##%#s##%*=cc**++:=*@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-15">
-      <rect x="0" y="139.2" width="0" height="11.8">
+      <rect x="0" y="138.0" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.225s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="147.2" clip-path="url(#cp-15)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@cs*cc*+=###*+*##s+++=@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-16">
+      <rect x="0" y="147.2" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.240s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="156.39999999999998" clip-path="url(#cp-16)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@%sc+*=---`+.:*cc*=++%@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-17">
+      <rect x="0" y="156.4" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.255s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="165.6" clip-path="url(#cp-17)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@*+*++*c**+:.:-++%@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-18">
+      <rect x="0" y="165.6" width="0" height="11.2">
         <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.270s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="147.0" clip-path="url(#cp-15)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@s*++*sssc*+-:===+=+@@@@@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-16">
-      <rect x="0" y="149.0" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.288s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="156.8" clip-path="url(#cp-16)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@-=+c####ccc**+-=:@@@@@@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-17">
-      <rect x="0" y="158.8" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.306s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="166.60000000000002" clip-path="url(#cp-17)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@@c*``+++-==+=::`*@@@@@@@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-18">
-      <rect x="0" y="168.6" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.324s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="176.4" clip-path="url(#cp-18)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@@@@:ccc=.        -=#@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="174.79999999999998" clip-path="url(#cp-18)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@-++s##scc**+-=s@@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-19">
-      <rect x="0" y="178.4" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.342s" fill="freeze" />
+      <rect x="0" y="174.8" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.285s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="186.20000000000002" clip-path="url(#cp-19)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@%=. scc*+=-=----===..@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="184.0" clip-path="url(#cp-19)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@@@c+`-+=:-=-```%@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-20">
-      <rect x="0" y="188.2" width="0" height="11.8">
+      <rect x="0" y="184.0" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.300s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="193.2" clip-path="url(#cp-20)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@%.cc*=.     .-=@@@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-21">
+      <rect x="0" y="193.2" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.315s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="202.39999999999998" clip-path="url(#cp-21)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@s= :scc*+==---==- .@@@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-22">
+      <rect x="0" y="202.4" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.330s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="211.6" clip-path="url(#cp-22)" xml:space="preserve">@@@@@@@@@@@@@@@@@@cc-`.+scccc**+====-  .`@@@@@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-23">
+      <rect x="0" y="211.6" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.345s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="220.79999999999998" clip-path="url(#cp-23)" xml:space="preserve">@@@@@@@@@@@@@@%++c*=`.-*c***+++++++=--..`:-=s@@@@@@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-24">
+      <rect x="0" y="220.79999999999998" width="0" height="11.2">
         <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.360s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="196.0" clip-path="url(#cp-20)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@@@@s*-` *scscc*+=======-  .`@@@@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-21">
-      <rect x="0" y="198.0" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.378s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="205.8" clip-path="url(#cp-21)" xml:space="preserve">@@@@@@@@@@@@@@@@@@@%+c*-..:+cccc**+**++++=-: .``-%@@@@@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-22">
-      <rect x="0" y="207.8" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.396s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="215.60000000000002" clip-path="url(#cp-22)" xml:space="preserve">@@@@@@@@@@@@@@@#*++*`=::..+*cc**++*+*+*+==++-.`:::-==s@@@@@@@@@@@@@@</text>
-    <clipPath id="cp-23">
-      <rect x="0" y="217.6" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.414s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="225.4" clip-path="url(#cp-23)" xml:space="preserve">@@@@@@@@@@%***++=++``-:...*csssc*++++**+*ccc=`:----`:=%@@@@@@@@@@@@@</text>
-    <clipPath id="cp-24">
-      <rect x="0" y="227.4" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.432s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="235.20000000000002" clip-path="url(#cp-24)" xml:space="preserve">@@@@@%c**+++==---++.-:``..`:#ssssccsssccccc-:`:---=.`:-=+*@@@@@@@@@@</text>
+    <text class="ascii" x="0" y="229.99999999999997" clip-path="url(#cp-24)" xml:space="preserve">@@@@@@@@@@c*+++*-.==..+cssc*++++*++cc*``::-``*%@@@@@@@@@@@@@@@@@</text>
     <clipPath id="cp-25">
-      <rect x="0" y="237.20000000000002" width="0" height="11.8">
+      <rect x="0" y="230.0" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.375s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="239.2" clip-path="url(#cp-25)" xml:space="preserve">@@@@@#+*++===-=+`-:`. `:ss#sc*ssccccc:`---:=`:-=+%@@@@@@@@@@@@@@</text>
+    <clipPath id="cp-26">
+      <rect x="0" y="239.2" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.390s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="248.39999999999998" clip-path="url(#cp-26)" xml:space="preserve">@@@+*+*-==-=+:=+::=:=.`::##c*ccsssss-=``-:..```--==+#@@@@@@@@@@@</text>
+    <clipPath id="cp-27">
+      <rect x="0" y="248.39999999999998" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.405s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="257.59999999999997" clip-path="url(#cp-27)" xml:space="preserve">@#**++==-`:-==:++:+=c+=`-:#sccsssss===:``..```::-=-=-=@@@@@@@@@@</text>
+    <clipPath id="cp-28">
+      <rect x="0" y="257.59999999999997" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.420s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="266.79999999999995" clip-path="url(#cp-28)" xml:space="preserve">****++:-:-`:====+`+=**+``::scss###*::-:..``:--`----`-`:#@@@@@@@@</text>
+    <clipPath id="cp-29">
+      <rect x="0" y="266.8" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.435s" fill="freeze" />
+      </rect>
+    </clipPath>
+    <text class="ascii" x="0" y="276.0" clip-path="url(#cp-29)" xml:space="preserve">**+-=-::`::--===+-:==**:``::css##**+= .``::---:--==::::`s@@@@@@@</text>
+    <clipPath id="cp-30">
+      <rect x="0" y="276.0" width="0" height="11.2">
         <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.450s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="245.00000000000003" clip-path="url(#cp-25)" xml:space="preserve">@@@%**+*=+====+::++`:=:+ .`::##sc*cccsssss=--.:-:...``:--===+%@@@@@@</text>
-    <clipPath id="cp-26">
-      <rect x="0" y="247.0" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.468s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="254.8" clip-path="url(#cp-26)" xml:space="preserve">@@c**+++--=:::==--*--==+*=-`--##scccssss#+=--``:...```::---==-=@@@@@</text>
-    <clipPath id="cp-27">
-      <rect x="0" y="256.8" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.486s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="264.6" clip-path="url(#cp-27)" xml:space="preserve">%c***++-:::`:--====+:+=-c*==``-sscsss###*==:=...```:::`----=`:::#@@@</text>
-    <clipPath id="cp-28">
-      <rect x="0" y="266.6" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.504s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="274.40000000000003" clip-path="url(#cp-28)" xml:space="preserve">***+-*-=::`-:-=+=-==:-+=c**```-:ccss###*=+== ..```:--:----=-:-`:`*@@</text>
-    <clipPath id="cp-29">
-      <rect x="0" y="276.40000000000003" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.522s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="284.20000000000005" clip-path="url(#cp-29)" xml:space="preserve">*+++=--:::`==--*=+===-===**+:``:`css##c+*=...`::::---`-:-==`-::-``#@</text>
-    <clipPath id="cp-30">
-      <rect x="0" y="286.2" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.540s" fill="freeze" />
-      </rect>
-    </clipPath>
-    <text class="ascii" x="0" y="294.0" clip-path="url(#cp-30)" xml:space="preserve">++++:-:-```-+==--+===----**+::-`-=c###**:`:`::::::-:``-:-==`:--````@</text>
+    <text class="ascii" x="0" y="285.2" clip-path="url(#cp-30)" xml:space="preserve">*+*-=:::`.+==-=+==--=**+-::-+cs##*+.`.::::::-`-:-=-::-``.@@@@@@@</text>
     <clipPath id="cp-31">
-      <rect x="0" y="296.0" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.558s" fill="freeze" />
+      <rect x="0" y="285.2" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.465s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="303.8" clip-path="url(#cp-31)" xml:space="preserve">*++--:`-...`-=+-=+*+=-:-:=++::::..-cs++.:=-::::::::``--:-=:`-``````@</text>
+    <text class="ascii" x="0" y="294.4" clip-path="url(#cp-31)" xml:space="preserve">+**+:::``.-=+-++*=--::++::-``*ss*+`--:::::::``-:-=``-..``*@@@@@@</text>
     <clipPath id="cp-32">
-      <rect x="0" y="305.8" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.576s" fill="freeze" />
+      <rect x="0" y="294.4" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.480s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="313.6" clip-path="url(#cp-32)" xml:space="preserve">+---::::.```.==-=*+++:--:`=++:::-.::+. =++:-:-::::`:---::-..:`:.```%</text>
+    <text class="ascii" x="0" y="303.59999999999997" clip-path="url(#cp-32)" xml:space="preserve">*+=:`-``..`=--+*==---:=++::-.`*+ -=+:-:::::`:=-::-.`.:.``-@@@@@@</text>
     <clipPath id="cp-33">
-      <rect x="0" y="315.6" width="0" height="11.8">
-        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.594s" fill="freeze" />
+      <rect x="0" y="303.59999999999997" width="0" height="11.2">
+        <animate attributeName="width" from="0" to="420" dur="0.10s" begin="0.495s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="ascii" x="0" y="323.40000000000003" clip-path="url(#cp-33)" xml:space="preserve">--+*-.`.`:.. `-=-*===-::``===.::::-- .=++:--`:``::````..`.. .:.`.`.@</text>
+    <text class="ascii" x="0" y="312.79999999999995" clip-path="url(#cp-33)" xml:space="preserve">--=-``.``  .--++==-::`:==`:::-= .=+:--:``::```.... .`.`.`+@@@@@@</text>
 
     <!-- Animated Name Below Photo -->
     <clipPath id="cp-name">
-      <rect x="0" y="331.20000000000005" width="0" height="26">
-        <animate attributeName="width" from="0" to="260" dur="0.75s" begin="0.79s" fill="freeze" />
+      <rect x="0" y="311.2" width="0" height="26">
+        <animate attributeName="width" from="0" to="260" dur="0.75s" begin="0.67s" fill="freeze" />
       </rect>
     </clipPath>
-    <text class="name-text" x="0" y="351.20000000000005" clip-path="url(#cp-name)">Lokesh Maurya</text>
-    <rect class="cursor" x="145" y="335.20000000000005" width="8" height="18" rx="1">
-      <animate attributeName="x" from="0" to="145" dur="0.75s" begin="0.79s" fill="freeze" />
+    <text class="name-text" x="0" y="331.2" clip-path="url(#cp-name)">Lokesh Maurya</text>
+    <rect class="cursor" x="145" y="315.2" width="8" height="18" rx="1">
+      <animate attributeName="x" from="0" to="145" dur="0.75s" begin="0.67s" fill="freeze" />
     </rect>
   </g>
 
-  <!-- Vertical Divider Line -->
-  <line x1="450" y1="20" x2="450" y2="370" stroke="#21262d" stroke-width="1.2" />
+  <!-- Vertical Divider -->
+  <line x1="445" y1="20" x2="445" y2="370" stroke="#21262d" stroke-width="1.2" />
 
-  <!-- Right: Metrics Grid (2x3) -->
-  <g transform="translate(490, 52)">
+  <!-- Right: Real GitHub Stats (2x3 Grid) -->
+  <g transform="translate(485, 52)">
     <!-- Row 1 -->
     <text class="stat-val" x="0" y="0">5</text>
     <text class="stat-label" x="0" y="16">REPOSITORIES</text>
@@ -299,7 +299,7 @@
   </g>
 
   <!-- Bottom-Right: Activity Visualizer Bars -->
-  <g transform="translate(490, 335)">
+  <g transform="translate(485, 345)">
     <rect class="bar" x="0" y="-14" width="13" height="14" rx="2" style="animation-delay: 0.1s;" />
     <rect class="bar" x="22" y="-22" width="13" height="22" rx="2" style="animation-delay: 0.3s;" />
     <rect class="bar" x="44" y="-35" width="13" height="35" rx="2" style="animation-delay: 0.2s;" />

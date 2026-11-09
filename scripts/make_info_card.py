@@ -3,28 +3,14 @@ import numpy as np
 
 RAMP = " .`:-=+*cs#%@"
 
-def get_ascii_rows(image_path="source-prepped.png", width=68):
+def get_ascii_rows(image_path="source-prepped.png", width=64):
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if img is None:
         print(f"Error: {image_path} not found!")
         return []
 
-    # Extra top/bottom empty transparency ya white padding crop karna agar exist kare
-    # Taaki face card ke upar se lekar bottom tak badi dikhe
-    coords = cv2.findNonZero(255 - img) if np.mean(img) > 128 else cv2.findNonZero(img)
-    if coords is not None:
-        x, y, w, h = cv2.boundingRect(coords)
-        # thoda padding rakh kar crop
-        pad = 5
-        y1 = max(0, y - pad)
-        y2 = min(img.shape[0], y + h + pad)
-        x1 = max(0, x - pad)
-        x2 = min(img.shape[1], x + w + pad)
-        img = img[y1:y2, x1:x2]
-
     h, w = img.shape
     aspect = h / w
-    # Height characters scale factor
     height = int(width * aspect * 0.52)
     resized = cv2.resize(img, (width, height))
     
@@ -35,20 +21,22 @@ def get_ascii_rows(image_path="source-prepped.png", width=68):
             val = resized[r, c]
             idx = int((val / 255.0) * (len(RAMP) - 1))
             row_str += RAMP[idx]
-        rows.append(row_str.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+        # Strict XML character escaping
+        escaped = row_str.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+        rows.append(escaped)
     return rows
 
 def generate_unified_whoami(output_svg="whoami-card.svg"):
-    rows = get_ascii_rows(width=68)
+    rows = get_ascii_rows(width=64)
     
+    font_size = 8
+    line_height = 9.2
+    
+    # Dynamic height calculation taaki koi clipping na ho
     card_w = 860
-    card_h = 390
+    card_h = max(390, int(len(rows) * line_height + 60))
     
-    # Badi photo ke liye font scale aur line spacing boost ki gayi hai
-    font_size = 8.5
-    line_height = 9.8
-    
-    # Bottom activity visualizer bars
+    # Pulse animation bars
     bar_data = [
         (14, 0.1), (22, 0.3), (35, 0.2), (58, 0.5), (30, 0.4), 
         (78, 0.15), (92, 0.6), (65, 0.25), (80, 0.35), (98, 0.1), 
@@ -106,26 +94,26 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
     }}
   </style>
 
-  <!-- Background Box -->
+  <!-- Container Box -->
   <rect width="100%" height="100%" class="bg" />
 
-  <!-- Left: Large Full-Scale ASCII Art -->
+  <!-- Left: Large ASCII Portrait -->
   <g transform="translate(30, 28)">
 '''
     ascii_end_time = 0.0
     for i, r in enumerate(rows):
-        y = i * line_height
-        delay = i * 0.018
-        ascii_end_time = delay + 0.10
+        y = (i + 1) * line_height
+        delay = i * 0.015
+        ascii_end_time = delay + 0.08
         svg += f'''    <clipPath id="cp-{i}">
-      <rect x="0" y="{y - line_height + 2}" width="0" height="{line_height + 2}">
+      <rect x="0" y="{y - line_height}" width="0" height="{line_height + 2}">
         <animate attributeName="width" from="0" to="420" dur="0.10s" begin="{delay:.3f}s" fill="freeze" />
       </rect>
     </clipPath>
     <text class="ascii" x="0" y="{y}" clip-path="url(#cp-{i})" xml:space="preserve">{r}</text>\n'''
 
-    # Name typing exactly below the photo
-    name_y = len(rows) * line_height + 18
+    # Name right below the photo
+    name_y = (len(rows) + 2) * line_height
     name_reveal_delay = ascii_end_time + 0.10
 
     svg += f'''
@@ -141,11 +129,11 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
     </rect>
   </g>
 
-  <!-- Vertical Divider Line -->
-  <line x1="450" y1="20" x2="450" y2="370" stroke="#21262d" stroke-width="1.2" />
+  <!-- Vertical Divider -->
+  <line x1="445" y1="20" x2="445" y2="{card_h - 20}" stroke="#21262d" stroke-width="1.2" />
 
-  <!-- Right: Metrics Grid (2x3) -->
-  <g transform="translate(490, 52)">
+  <!-- Right: Real GitHub Stats (2x3 Grid) -->
+  <g transform="translate(485, 52)">
     <!-- Row 1 -->
     <text class="stat-val" x="0" y="0">5</text>
     <text class="stat-label" x="0" y="16">REPOSITORIES</text>
@@ -169,7 +157,7 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
   </g>
 
   <!-- Bottom-Right: Activity Visualizer Bars -->
-  <g transform="translate(490, 335)">
+  <g transform="translate(485, {card_h - 45})">
 '''
     for idx, (height, delay) in enumerate(bar_data):
         x = idx * 22
@@ -180,7 +168,7 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
 
     with open(output_svg, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"Generated large whoami card: {output_svg}")
+    print(f"Generated clean valid SVG: {output_svg}")
 
 if __name__ == "__main__":
     generate_unified_whoami()
