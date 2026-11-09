@@ -6,7 +6,7 @@ RAMP = " .`:-=+*cs#%@"
 def get_ascii_rows(image_path="source-prepped.png", width=62):
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if img is None:
-        print(f"Error: {image_path} nahi mila!")
+        print(f"Error: {image_path} not found!")
         return []
     h, w = img.shape
     aspect = h / w
@@ -32,11 +32,11 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
     font_size = 7
     line_height = 8.2
     
-    # Activity bars data: (height, delay)
+    # Activity bars scaled realistically to recent activity
     bar_data = [
-        (15, 0.1), (28, 0.3), (45, 0.2), (72, 0.5), (38, 0.4), 
-        (85, 0.15), (60, 0.6), (75, 0.25), (50, 0.35), (95, 0.1), 
-        (65, 0.45), (35, 0.2), (22, 0.5)
+        (12, 0.1), (18, 0.3), (25, 0.2), (40, 0.5), (20, 0.4), 
+        (55, 0.15), (70, 0.6), (48, 0.25), (65, 0.35), (85, 0.1), 
+        (60, 0.45), (32, 0.2), (24, 0.5)
     ]
     
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {card_w} {card_h}" width="{card_w}" height="{card_h}">
@@ -58,7 +58,7 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
     }}
     .stat-val {{
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 700;
       fill: #e6edf3;
     }}
@@ -76,9 +76,9 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
       animation: pulse 1.6s ease-in-out infinite alternate;
     }}
     @keyframes pulse {{
-      0% {{ transform: scaleY(0.28); }}
+      0% {{ transform: scaleY(0.35); }}
       50% {{ transform: scaleY(1.0); }}
-      100% {{ transform: scaleY(0.42); }}
+      100% {{ transform: scaleY(0.45); }}
     }}
     @keyframes blink {{
       0%, 100% {{ opacity: 1; }}
@@ -108,7 +108,6 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
     </clipPath>
     <text class="ascii" x="0" y="{y}" clip-path="url(#cp-{i})" xml:space="preserve">{r}</text>\n'''
 
-    # Photo ke theek neeche typing animated "Lokesh Maurya" with terminal cursor
     name_y = len(rows) * line_height + 18
     name_reveal_delay = ascii_end_time + 0.15
 
@@ -128,27 +127,27 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
   <!-- Vertical Divider Line -->
   <line x1="435" y1="25" x2="435" y2="365" stroke="#21262d" stroke-width="1.2" />
 
-  <!-- Right: Metrics Grid (2x3) -->
+  <!-- Right: Real GitHub Metrics Grid (2x3) -->
   <g transform="translate(480, 52)">
     <!-- Row 1 -->
-    <text class="stat-val" x="0" y="0">149</text>
+    <text class="stat-val" x="0" y="0">5</text>
     <text class="stat-label" x="0" y="16">REPOSITORIES</text>
 
-    <text class="stat-val" x="175" y="0">149</text>
+    <text class="stat-val" x="175" y="0">61</text>
     <text class="stat-label" x="175" y="16">CONTRIBUTIONS</text>
 
     <!-- Row 2 -->
-    <text class="stat-val" x="0" y="70">8,504</text>
+    <text class="stat-val" x="0" y="70">48</text>
     <text class="stat-label" x="0" y="86">COMMITS</text>
 
-    <text class="stat-val" x="175" y="70">362</text>
+    <text class="stat-val" x="175" y="70">0</text>
     <text class="stat-label" x="175" y="86">STARS</text>
 
     <!-- Row 3 -->
-    <text class="stat-val" x="0" y="140">128</text>
+    <text class="stat-val" x="0" y="140">0</text>
     <text class="stat-label" x="0" y="156">FOLLOWERS</text>
 
-    <text class="stat-val" x="175" y="140">23.5</text>
+    <text class="stat-val" x="175" y="140">1.2</text>
     <text class="stat-label" x="175" y="156">AVG/WEEK</text>
   </g>
 
@@ -164,7 +163,7 @@ def generate_unified_whoami(output_svg="whoami-card.svg"):
 
     with open(output_svg, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"Regenerated unified whoami card: {output_svg}")
+    print(f"Generated unified whoami card with real stats: {output_svg}")
 
 if __name__ == "__main__":
     generate_unified_whoami()
