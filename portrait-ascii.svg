@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299.0 326.0" width="299.0" height="326.0">
+  <style>
+    .ascii {
+      font-family: 'Courier New', monospace;
+      font-size: 7px;
+      fill: #8b949e;
+      white-space: pre;
+    }
+    @keyframes typeRow {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    .row {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typeRow 0.05s steps(30, end) forwards;
+    }
+  </style>
+  <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
+  <text class="ascii" x="10" y="15">
+    <tspan x="10" y="15.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.00s;">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="23.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.04s;">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="32.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.08s;">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="40.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.12s;">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="49.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.16s;">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="57.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.20s;">@@@@@@@@@@@@@@@@@@@@@@@@@@++=:::...`%@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="66.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.24s;">@@@@@@@@@@@@@@@@@@@@@@@#=`:`-:......``*@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="74.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.28s;">@@@@@@@@@@@@@@@@@@@@@@c=-:.&nbsp;.`:.&nbsp;..&nbsp;&nbsp;..`:#@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="83.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.32s;">@@@@@@@@@@@@@@@@@@@@@%`-:`...&nbsp;&nbsp;`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..`%@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="91.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.36s;">@@@@@@@@@@@@@@@@@@@@@+`::.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..`*@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="100.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.40s;">@@@@@@@@@@@@@@@@@@@@@%`...:-==*+-::```.&nbsp;.`:@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="108.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.44s;">@@@@@@@@@@@@@@@@@@@@@@``.:+cccscccc*+-`..`:@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="117.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.48s;">@@@@@@@@@@@@@@@@@@@@@@*.cs########scc+--&nbsp;.%@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="125.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.52s;">@@@@@@@@@@@@@@@@@@@@@c+`c*=````**-&nbsp;&nbsp;..`+:*@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="134.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.56s;">@@@@@@@@@@@@@@@@@@@@@=s+ss+--:=*s-`&nbsp;&nbsp;.`-===@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="142.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.60s;">@@@@@@@@@@@@@@@@@@@@@++*s#######s=*csc*+*+*@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="151.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.64s;">@@@@@@@@@@@@@@@@@@@@@c#****+=c#%c+=s##c=++%@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="159.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.68s;">@@@@@@@@@@@@@@@@@@@@@@c++**--=`.`.=ccc+=`+@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="168.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.72s;">@@@@@@@@@@@@@@@@@@@@@@@@+**+*cc*+:..-*=+@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="176.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.76s;">@@@@@@@@@@@@@@@@@@@@@@@@+++c###ccc**+==%@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="185.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.80s;">@@@@@@@@@@@@@@@@@@@@@@@@c*::**==+*+::.@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="193.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.84s;">@@@@@@@@@@@@@@@@@@@@@@@s+cc=.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.-=@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="202.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.88s;">@@@@@@@@@@@@@@@@@@@@@c.&nbsp;ssc*+===---===.%@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="210.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.92s;">@@@@@@@@@@@@@@@@@@@c*`.:scscc*+=====-:&nbsp;.`@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="219.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 0.96s;">@@@@@@@@@@@@@@@@#+c*`.`=*c***++++++=--...`=s@@@@@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="227.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.00s;">@@@@@@@@@@@@sc+--.=:`.=*csc++++*+*+++++.`:::=-+#@@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="236.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.04s;">@@@@@@@#**++===+-.-`..&nbsp;*s##s****c**scc:`:--=.::=s@@@@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="244.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.08s;">@@@@c**++++----+-:-:-&nbsp;`:-##scccsssccs:-::-+=.``:-=+#@@@@@@@@@@@@@</tspan>
+    <tspan x="10" y="253.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.12s;">@@#**++-+=-:=--++`=-*.-`--#sc*ccssss+=::`-...``:-====+%@@@@@@@@@@</tspan>
+    <tspan x="10" y="261.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.16s;">@c**=+=-`::-=+=-*`+++c==.-:#ccsssss*+=-`...``:::--=--::s@@@@@@@@@</tspan>
+    <tspan x="10" y="270.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.20s;">***++=--:::-=+-==-=+=c*-`.:=ccss##s-+=-&nbsp;.``::--:--==`-`:=@@@@@@@@</tspan>
+    <tspan x="10" y="278.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.24s;">***=:=:`:`---+===+-==c**-`::*cs###*+=..````:--`--==-::::`+@@@@@@@</tspan>
+    <tspan x="10" y="287.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.28s;">++*--:-``.+-==-*+---=-*+:--::*s##**``:`:::::-:`-:==`:::``.@@@@@@@</tspan>
+    <tspan x="10" y="295.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.32s;">*++--`-.`.`=+-++*=--::+++-::&nbsp;`cs*+.:=:::::::``:-:==`::.```#@@@@@@</tspan>
+    <tspan x="10" y="304.0" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.36s;">++-::::.`.:-+-=+===--:==+`:::``c-&nbsp;=+:--::::``-=-:-`.:``.``+@@@@@@</tspan>
+    <tspan x="10" y="312.5" style="animation: typeRow 0.1s ease forwards; animation-delay: 1.40s;">---=.`.``&nbsp;.&nbsp;-==*+=-::``==:::::-&nbsp;&nbsp;=++:-.::`:`.``....&nbsp;.:.`.`s@@@@@@</tspan>
+  </text>
+</svg>

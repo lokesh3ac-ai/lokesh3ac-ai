@@ -1,0 +1,63 @@
+import cv2
+import numpy as np
+
+RAMP = " .`:-=+*cs#%@"
+
+def generate_ascii_svg(image_path="source-prepped.png", output_svg="portrait-ascii.svg", width=65):
+    img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+    h, w = img.shape
+    aspect = h / w
+    height = int(width * aspect * 0.55)
+    resized = cv2.resize(img, (width, height))
+    
+    rows = []
+    for r in range(height):
+        line = ""
+        for c in range(width):
+            val = resized[r, c]
+            idx = int((val / 255) * (len(RAMP) - 1))
+            char = RAMP[idx]
+            line += "&nbsp;" if char == " " else char
+        rows.append(line)
+
+    font_size = 7
+    line_height = 8.5
+    svg_w = width * 4.6
+    svg_h = height * line_height + 20
+
+    svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_w} {svg_h}" width="{svg_w}" height="{svg_h}">
+  <style>
+    .ascii {{
+      font-family: 'Courier New', monospace;
+      font-size: {font_size}px;
+      fill: #8b949e;
+      white-space: pre;
+    }}
+    @keyframes typeRow {{
+      from {{ width: 0; }}
+      to {{ width: 100%; }}
+    }}
+    .row {{
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typeRow 0.05s steps(30, end) forwards;
+    }}
+  </style>
+  <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
+  <text class="ascii" x="10" y="15">
+'''
+    for i, row in enumerate(rows):
+        y_pos = 15 + i * line_height
+        delay = i * 0.04
+        svg_content += f'    <tspan x="10" y="{y_pos}" style="animation: typeRow 0.1s ease forwards; animation-delay: {delay:.2f}s;">{row}</tspan>\n'
+
+    svg_content += '''  </text>
+</svg>'''
+
+    with open(output_svg, "w", encoding="utf-8") as f:
+        f.write(svg_content)
+    print(f"Generated {output_svg}")
+
+if __name__ == "__main__":
+    generate_ascii_svg()
