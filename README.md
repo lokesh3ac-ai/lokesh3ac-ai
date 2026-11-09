@@ -13,7 +13,9 @@
 </div>
 
 <br/>
-
+<div align="center">
+  <img src="https://raw.githubusercontent.com/lokesh3ac-ai/lokesh3ac-ai/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</div>
 ### 🐍 Contribution Activity
 
 <div align="center">
