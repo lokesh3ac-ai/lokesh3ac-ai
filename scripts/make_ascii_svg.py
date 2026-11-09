@@ -5,6 +5,10 @@ RAMP = " .`:-=+*cs#%@"
 
 def generate_ascii_svg(image_path="source-prepped.png", output_svg="portrait-ascii.svg", width=65):
     img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+    if img is None:
+        print(f"Error: Could not read {image_path}")
+        return
+
     h, w = img.shape
     aspect = h / w
     height = int(width * aspect * 0.55)
@@ -15,15 +19,16 @@ def generate_ascii_svg(image_path="source-prepped.png", output_svg="portrait-asc
         line = ""
         for c in range(width):
             val = resized[r, c]
-            idx = int((val / 255) * (len(RAMP) - 1))
-            char = RAMP[idx]
-            line += "&nbsp;" if char == " " else char
-        rows.append(line)
+            idx = int((val / 255.0) * (len(RAMP) - 1))
+            line += RAMP[idx]
+        # XML-safe escaping
+        escaped_line = line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        rows.append(escaped_line)
 
     font_size = 7
     line_height = 8.5
-    svg_w = width * 4.6
-    svg_h = height * line_height + 20
+    svg_w = 370
+    svg_h = height * line_height + 30
 
     svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {svg_w} {svg_h}" width="{svg_w}" height="{svg_h}">
   <style>
@@ -33,31 +38,29 @@ def generate_ascii_svg(image_path="source-prepped.png", output_svg="portrait-asc
       fill: #8b949e;
       white-space: pre;
     }}
-    @keyframes typeRow {{
-      from {{ width: 0; }}
-      to {{ width: 100%; }}
+    @keyframes lineFadeIn {{
+      from {{ opacity: 0; }}
+      to {{ opacity: 1; }}
     }}
-    .row {{
-      display: inline-block;
-      overflow: hidden;
-      white-space: nowrap;
-      animation: typeRow 0.05s steps(30, end) forwards;
+    .line {{
+      opacity: 0;
+      animation: lineFadeIn 0.05s ease forwards;
     }}
   </style>
-  <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
-  <text class="ascii" x="10" y="15">
+  <rect width="100%" height="100%" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1"/>
+  <text class="ascii" x="15" y="20" xml:space="preserve">
 '''
     for i, row in enumerate(rows):
-        y_pos = 15 + i * line_height
-        delay = i * 0.04
-        svg_content += f'    <tspan x="10" y="{y_pos}" style="animation: typeRow 0.1s ease forwards; animation-delay: {delay:.2f}s;">{row}</tspan>\n'
+        y_pos = 20 + i * line_height
+        delay = i * 0.03
+        svg_content += f'    <tspan class="line" x="15" y="{y_pos}" style="animation-delay: {delay:.2f}s;">{row}</tspan>\n'
 
     svg_content += '''  </text>
 </svg>'''
 
     with open(output_svg, "w", encoding="utf-8") as f:
         f.write(svg_content)
-    print(f"Generated {output_svg}")
+    print(f"Regenerated valid {output_svg}")
 
 if __name__ == "__main__":
     generate_ascii_svg()
